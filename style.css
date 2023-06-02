@@ -1,0 +1,72 @@
+/* On screens that are 992px or more, set the background color to green/darkgreen gradient */
+body {
+    background: linear-gradient(to right, #A4D0A4, #617A55);
+  }
+  
+  /* On screens that are 992px or less, set the background color to red/blue gradient */
+  @media screen and (max-width: 992px) {
+    body {
+      background: linear-gradient(to right, blue, red);
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
+  
+  
+  /* If the screen size is 600px wide or less, hide the element */
+  @media screen and (max-width: 600px) {
+    pic1 {
+      display: none;
+    }
+  }
+  
+  
+  .clear {
+          clear: both;
+        }
+  .clear div {
+          width: 50%;
+          display: inline-block;
+        }
+  
+  #col1 {
+          background: linear-gradient(to right, blue, purple);
+          float:left;
+          box-shadow: 10px 5px 5px grey;
+          
+        }
+  #col2 {
+          background-color: #B9EDDD;
+          box-shadow: 12px 7px 4px blue;
+        }
+  #pic1 {
+     box-shadow: 10px 5px 5px black;
+  }
+  /* #b1 {
+    background: linear-gradient(to right, #A4D0A4, #617A55);
+    font-family: 'Saira Condensed', sans-serif; */
+  }
+  #img {
+    border:5px solid green;
+  }
+  
+  .focus-example {
+    border-color: green !important;
+    transition: all 0.5s ease-out;
+  }
+  
+  .focus-example::placeholder {
+    font-style: italic;
+    font-variant: small-caps;
+    color: green;
+  }
+  
+  .focus-example:focus {
+    border-color: black !important;
+    transition: all 0.5s ease-out;
+  }
